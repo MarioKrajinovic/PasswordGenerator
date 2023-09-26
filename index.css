@@ -1,0 +1,91 @@
+@font-face {
+    font-family: "Karla";
+    src: url("karla/Karla-Regular.ttf");
+}
+body{
+    margin: 0px;
+    background-color: #1F2937;
+}
+#password-generator{
+    font-family: "Karla";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+#password-generator div{width: 70%;}
+h1{
+    color: white;
+    margin: 0px;
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+span{color: #4ADF86;}
+p{
+    margin: 0px;
+    color: #D5D4D8;
+    font-size: 20px;
+}
+button{
+    background-color: #10B981;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    padding: 15px 20px;
+    cursor: pointer; 
+}
+.password-length input{
+    background-color: #10B981;
+    border: none;
+    border-radius: 6px;
+    width: 50px;
+    color: white;
+    text-align: center;
+}
+.password-length input::placeholder{
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+.form-check{margin: 20px 0px;}
+.form-check-input{
+    background-color: #10B981 !important;
+    height: 20px !important;
+}
+label{
+    color: white;
+}
+.line{
+    height: 2px;
+    background-color: #2F3E53;
+}
+.fields{
+    display: flex;
+    justify-content: space-between;
+}
+.fields div{
+    width: 40% !important;
+    height: 60px;
+    background-color: #2F3E53;
+    border-radius: 6px;
+    color: #10B981;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.lite{background-color: white;}
+.lite h1{color: #1F2937;}
+.lite p{color: #6B7280;}
+.lite label{color: #1F2937;}
+@media screen and (max-width: 768px){
+    #password-generator div{width: 90%;}
+}
+@media screen and (max-width: 425px){
+    .fields div{
+        width: 45% !important;
+    }
+}
