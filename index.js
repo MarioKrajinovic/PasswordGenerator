@@ -11,13 +11,17 @@ const symbols = ["~","`","!","@","#","$","%","^","&"
 
 let firstPasswordEl = document.getElementById("first-password")
 let secondPasswordEl = document.getElementById("second-password")
+let lengthEl = document.getElementById("length-message")
 
 function generateFirstPassword(){
     let length = document.getElementById("length").value
     let checkSymbols = document.getElementById("symbols")
     let checkNumbers = document.getElementById("numbers")
     let password = ""
-
+    if(length > 15){
+        length = 15
+        lengthEl.textContent = "Max length is 15!"
+    }
     if(checkNumbers.checked === true && checkSymbols.checked === true){
         let characters = []
         for(let i = 0; i < letters.length; i++){
@@ -76,7 +80,9 @@ function generateSecondPassword(){
     let checkSymbols = document.getElementById("symbols")
     let checkNumbers = document.getElementById("numbers")
     let password = ""
-
+    if(length > 15){
+        length = 15
+    }
     if(checkNumbers.checked === true && checkSymbols.checked === true){
         let characters = []
         for(let i = 0; i < letters.length; i++){
